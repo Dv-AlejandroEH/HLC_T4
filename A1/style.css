@@ -13,3 +13,25 @@ header h1 {
     color: white;
     margin-left: 0.4rem;
 }
+label {
+    color: white;
+}
+.claro {
+    color: gray;
+}
+.oscuro {
+    background-color: black;
+    color: white;
+}
+.azul {
+    background-color: #add9e6;
+    color: blue;
+}
+.rosa {
+    background-color: #1967d3;
+    color: white;
+}
+.verde {
+    background-color: #a3f6a4;
+    color: green;
+}

@@ -7,17 +7,19 @@
     <title>Bloc de Notas AEH</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <h1>Bloc de Notas</h1>
-        <form onchange="">
+        <form onchange="cambiarColor()">
+            <label for="tema">Tema:</label>
             <select name="tema" id="tema">
-                <option value="claro">🌞Claro</option>
-                <option value="oscuro">🌙Oscuro</option>
-                <option value="azul">🌊Azul</option>
-                <option value="rosa">🌸Rosa</option>
-                <option value="verde">🍂Verde</option>
+                <option class="claro" value="claro">🌞Claro</option>
+                <option class="oscuro" value="oscuro">🌙Oscuro</option>
+                <option class="azul" value="azul">🌊Azul</option>
+                <option class="rosa" value="rosa">🌸Rosa</option>
+                <option class="verde" value="verde">🍂Verde</option>
             </select>
         </form>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>
