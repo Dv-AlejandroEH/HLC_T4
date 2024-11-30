@@ -12,9 +12,16 @@ header {
 header h1 {
     color: white;
     margin-left: 0.4rem;
+    font-size: 3rem;
 }
 label {
     color: white;
+}
+.form1 {
+    font-size: 1.7rem;
+}
+.form1 select {
+    font-size: 1.2rem;
 }
 .claro {
     color: gray;
@@ -34,4 +41,33 @@ label {
 .verde {
     background-color: #a3f6a4;
     color: green;
+}
+.form2 textarea {
+    width: 95%;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.form2 {
+    display: flex;
+    flex-direction: column;
+}
+.form2 input {
+    font-size: 1.4rem;
+    width: 10rem;
+    height: 4rem;
+    border-radius: 5px;
+    background-color: #017afd;
+    color: white;
+    border: none;
+}
+.contenido {
+    margin: 1.5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    color: gray;
+    font-size: 1.5rem;
 }
