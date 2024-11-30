@@ -2,6 +2,21 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+body.claro {
+    background-color: white;
+}
+body.oscuro {
+    background-color: black;
+}
+body.azul {
+    background-color: white;
+}
+body.rosa {
+    background-color: white;
+}
+body.verde {
+    background-color: white;
+}
 header {
     background-color: #007aff;
     padding: 0.5rem;
@@ -9,12 +24,62 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+header.claro {
+    background-color: white;
+    color: gray;
+}
+header.oscuro {
+    background-color: #666666;
+    color: white;
+}
+header.azul {
+    background-color: #add9e6;
+    color: blue;
+}
+header.rosa {
+    background-color: #f4c2c2;
+    color: pink;
+}
+header.verde {
+    background-color: #a3f6a4;
+    color: green;
+}
 header h1 {
     color: white;
     margin-left: 0.4rem;
     font-size: 3rem;
 }
+header h1.claro {
+    color: white;
+}
+header h1.oscuro {
+    color: white;
+}
+header h1.azul {
+    color: #044e97;
+}
+header h1.rosa {
+    color: white;
+}
+header h1.verde {
+    color: white;
+}
 label {
+    color: white;
+}
+label.claro {
+    color: white;
+}
+label.oscuro {
+    color: white;
+}
+label.azul {
+    color: #2d7cb0;
+}
+label.rosa {
+    color: white;
+}
+label.verde {
     color: white;
 }
 .form1 {
@@ -48,6 +113,21 @@ label {
     font-size: 1.2rem;
     border-radius: 5px;
 }
+.form2 textarea.claro {
+    background-color: white;
+}
+.form2 textarea.oscuro {
+    background-color: #434343;
+}
+.form2 textarea.azul {
+    background-color: #434343;
+}
+.form2 textarea.rosa {
+    background-color: #434343;
+}
+.form2 textarea.verde {
+    background-color: #434343;
+}
 .form2 {
     display: flex;
     flex-direction: column;
@@ -61,11 +141,41 @@ label {
     color: white;
     border: none;
 }
+.form2 input.claro {
+    background-color: white;
+}
+.form2 input.oscuro {
+    background-color: #69676a;
+}
+.form2 input.azul {
+    background-color: white;
+}
+.form2 input.rosa {
+    background-color: white;
+}
+.form2 input.verde {
+    background-color: white;
+}
 .contenido {
     margin: 1.5rem;
 }
 h2 {
     font-size: 3rem;
+}
+h2.claro {
+    color: black;
+}
+h2.oscuro {
+    color: white;
+}
+h2.azul {
+    color: blue;
+}
+h2.rosa {
+    color: pink;
+}
+h2.verde {
+    color: green;
 }
 h3 {
     color: gray;

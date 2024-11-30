@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Bloc de Notas AEH</title>
 </head>
-<body>
+<body id="body">
     <header id="header">
-        <h1>Bloc de Notas</h1>
-        <form class="form1" onchange="cambiarColor()">
+        <h1 class="h1">Bloc de Notas</h1>
+        <form class="form1">
             <label for="tema">Tema:</label>
-            <select name="tema" id="tema">
+            <select name="tema" id="tema" onchange="cambiarColor(this.value)">
                 <option class="claro" value="claro">🌞Claro</option>
                 <option class="oscuro" value="oscuro">🌙Oscuro</option>
                 <option class="azul" value="azul">🌊Azul</option>
@@ -22,10 +22,10 @@
     </header>
     <div class="contenido">
         <form class="form2">
-            <textarea name="notas" id="notas" rows="8" placeholder="Escribe tu nota aquí..."></textarea>
-            <input value="Añadir nota" type="submit">
+            <textarea name="notas" id="textarea" rows="8" placeholder="Escribe tu nota aquí..."></textarea>
+            <input id="input" value="Añadir nota" type="submit">
         </form>
-        <h2>Notas</h2>
+        <h2 id="h2">Notas</h2>
         <h3>Todavía no hay notas 🍃</h3>
     </div>
     <script src="script.js"></script>
