@@ -9,7 +9,7 @@ body.oscuro {
     background-color: black;
 }
 body.azul {
-    background-color: white;
+    background-color: #e7f8ff;
 }
 body.rosa {
     background-color: white;
@@ -26,26 +26,20 @@ header {
 }
 header.claro {
     background-color: white;
-    color: gray;
 }
 header.oscuro {
     background-color: #666666;
-    color: white;
 }
 header.azul {
     background-color: #add9e6;
-    color: blue;
 }
 header.rosa {
     background-color: #f4c2c2;
-    color: pink;
 }
 header.verde {
     background-color: #a3f6a4;
-    color: green;
 }
 header h1 {
-    color: white;
     margin-left: 0.4rem;
     font-size: 3rem;
 }
@@ -56,7 +50,7 @@ header h1.oscuro {
     color: white;
 }
 header h1.azul {
-    color: #044e97;
+    color: #004d99;
 }
 header h1.rosa {
     color: white;
@@ -74,7 +68,7 @@ label.oscuro {
     color: white;
 }
 label.azul {
-    color: #2d7cb0;
+    color: #1a679a;
 }
 label.rosa {
     color: white;
@@ -88,22 +82,22 @@ label.verde {
 .form1 select {
     font-size: 1.2rem;
 }
-.claro {
+option.claro {
     color: gray;
 }
-.oscuro {
+option.oscuro {
     background-color: black;
     color: white;
 }
-.azul {
+option.azul {
     background-color: #add9e6;
     color: blue;
 }
-.rosa {
+option.rosa {
     background-color: #1967d3;
     color: white;
 }
-.verde {
+option.verde {
     background-color: #a3f6a4;
     color: green;
 }
@@ -120,7 +114,7 @@ label.verde {
     background-color: #434343;
 }
 .form2 textarea.azul {
-    background-color: #434343;
+    background-color: white;
 }
 .form2 textarea.rosa {
     background-color: #434343;
@@ -143,18 +137,23 @@ label.verde {
 }
 .form2 input.claro {
     background-color: white;
+    color: black;
 }
 .form2 input.oscuro {
     background-color: #69676a;
+    color: white;
 }
 .form2 input.azul {
-    background-color: white;
+    background-color: #87cef8;
+    color: #256fa3;
 }
 .form2 input.rosa {
     background-color: white;
+    color: ;
 }
 .form2 input.verde {
     background-color: white;
+    color: ;
 }
 .contenido {
     margin: 1.5rem;
@@ -169,7 +168,7 @@ h2.oscuro {
     color: white;
 }
 h2.azul {
-    color: blue;
+    color: #004d99;
 }
 h2.rosa {
     color: pink;
