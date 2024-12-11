@@ -128,7 +128,7 @@ option.verde {
     display: flex;
     flex-direction: column;
 }
-.form2 input {
+button {
     font-size: 0.9rem;
     width: 8rem;
     height: 2.5rem;
@@ -138,23 +138,23 @@ option.verde {
     border: none;
     cursor: pointer;
 }
-.form2 input.claro {
+button.claro {
     background-color: #ffa600;
     color: #a86700;
 }
-.form2 input.oscuro {
+button.oscuro {
     background-color: #69676a;
     color: white;
 }
-.form2 input.azul {
+button.azul {
     background-color: #87cef8;
     color: #256fa3;
 }
-.form2 input.rosa {
+button.rosa {
     background-color: #fea7d3;
     color: #973d81;
 }
-.form2 input.verde {
+button.verde {
     background-color: #a6f8a5;
     color: #358a2d;
 }
@@ -182,4 +182,24 @@ h2.verde {
 h3 {
     color: gray;
     font-size: 1rem;
+}
+.oculto {
+    display: none;
+}
+.nota {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 0.4rem;
+}
+.nota button {
+    font-size: 0.9rem;
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background-color: #017afd;
+    color: white;
+    border: none;
+    cursor: pointer;
 }

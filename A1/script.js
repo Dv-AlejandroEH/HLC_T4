@@ -1,11 +1,11 @@
 function cambiarColor(tema){
-    let header = document.getElementById('header');
-    let body = document.getElementById('body');
-    let textarea = document.getElementById('textarea');
-    let input = document.getElementById('input');
-    let h1 = document.getElementById('h1');
-    let h2 = document.getElementById('h2');
-    let label = document.getElementById('label');
+    const header = document.getElementById('header');
+    const body = document.getElementById('body');
+    const textarea = document.getElementById('textarea');
+    const input = document.getElementById('input');
+    const h1 = document.getElementById('h1');
+    const h2 = document.getElementById('h2');
+    const label = document.getElementById('label');
     switch (tema) {
         case 'oscuro':
             input.className = 'oscuro';
@@ -54,3 +54,45 @@ function cambiarColor(tema){
             break;
     }
 }
+function eliminarNota(event) {
+    const nota = event.target.parentElement;
+    nota.remove();
+}
+
+function eliminarTodasNotas() {
+    const notas = document.getElementById('notas');
+    while (notas.firstChild) {
+        notas.removeChild(notas.firstChild);
+    }
+}
+
+function agregarNota() {
+    document.getElementById('h3').classList.add('oculto');
+    const textarea = document.getElementById('textarea');
+    const div = document.createElement('div');
+    div.textContent = textarea.value;
+    div.classList.add('nota');
+
+    const botonEliminar = document.createElement('button');
+    botonEliminar.textContent = 'Eliminar';
+    botonEliminar.addEventListener('click', eliminarNota);
+    div.appendChild(botonEliminar);
+
+    document.getElementById('notas').insertBefore(div, document.getElementById('notas').firstChild);
+    textarea.value = '';
+
+    botonEliminarTodas.classList.remove('oculto');
+}
+
+const botonEliminarTodas = document.createElement('button');
+botonEliminarTodas.classList.add('oculto');
+botonEliminarTodas.textContent = 'Eliminar todas las notas';
+botonEliminarTodas.addEventListener('click', eliminarTodasNotas);
+document.body.appendChild(botonEliminarTodas);
+
+document.getElementById('textarea').addEventListener('keydown', function comprobarEnter(event) {
+    if (event.key === 'Enter') {
+    event.preventDefault();
+    agregarNota();
+    }
+});
