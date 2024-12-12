@@ -64,6 +64,8 @@ function eliminarTodasNotas() {
     while (notas.firstChild) {
         notas.removeChild(notas.firstChild);
     }
+    botonEliminarTodas.classList.add('oculto');
+    document.getElementById('h3').classList.remove('oculto');
 }
 
 function agregarNota() {
@@ -86,7 +88,8 @@ function agregarNota() {
 
 const botonEliminarTodas = document.createElement('button');
 botonEliminarTodas.classList.add('oculto');
-botonEliminarTodas.textContent = 'Eliminar todas las notas';
+botonEliminarTodas.classList.add('eliminarTodas');
+botonEliminarTodas.textContent = 'Borrar todas las notas';
 botonEliminarTodas.addEventListener('click', eliminarTodasNotas);
 document.body.appendChild(botonEliminarTodas);
 

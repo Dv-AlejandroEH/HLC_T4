@@ -192,14 +192,19 @@ h3 {
     padding: 0.5rem;
     border: 1px solid #f0f0f0;
     margin-bottom: 0.4rem;
+    font-size: 1.3rem;
+    height: 2rem;
 }
 .nota button {
-    font-size: 0.9rem;
-    width: 8rem;
-    height: 2.5rem;
-    border-radius: 5px;
-    background-color: #017afd;
-    color: white;
-    border: none;
-    cursor: pointer;
+    height: 2rem;
+    width: 5rem;
+    right: 2rem;
+    position: absolute;
+
+}
+.eliminarTodas {
+    background-color: #fe5b5e;
+    border: 1px solid #ffa5a4;
+    margin-left: 1.5rem;
+    width: 12rem;
 }
